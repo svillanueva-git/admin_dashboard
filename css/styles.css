@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "sidebar header"
+  "sidebar main-content";
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 10px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search input[type=image] {
+  transform: scale(1);
+  margin-bottom: -4px;
+  margin-right: 2px;
+}
+
+.user-tabs input[type=image] {
+  margin-left: 5px;
+}
+
+.user-tabs span {
+  margin-left: 10px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main-content {
+  grid-area: main-content;
+}
