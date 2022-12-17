@@ -23,8 +23,10 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  padding: 20px;
+  padding: 15px 20px 10px 20px;
   height: 15vh;
+  box-shadow: 5px 5px 5px rgb(235, 235, 235);
+  margin-left: -7px;
 }
 
 .header-top,
@@ -136,6 +138,14 @@ div img {
 
 /*MAIN CONTENT*/
 
+h1 {
+  font-size: large;
+}
+
+.card p {
+  font-size: medium;
+}
+
 /*CONTENT 1*/
 
 .main-content {
@@ -145,6 +155,9 @@ div img {
   grid-template-rows: auto;
   grid-template-areas: 
   "content-1 content-2";
+  padding: 20px 5px 25px 5px;
+  background-color: rgb(241, 241, 241);
+  margin-top: -5px;
 }
 
 .content-1 {
@@ -167,8 +180,18 @@ div img {
 }
 
 .card {
-  background-color: rgb(224, 225, 226);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 5px rgb(235, 235, 235);
   margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card-bottom {
+  align-self: flex-end;
 }
 
 /* CONTENT 2*/
@@ -194,6 +217,8 @@ div img {
 
 .card-2,
 .card-3 {
-  background-color: rgb(224, 225, 226);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 5px rgb(235, 235, 235);
   margin: 10px;
+  border-radius: 10px;
 }
