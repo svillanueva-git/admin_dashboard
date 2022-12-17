@@ -9,8 +9,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 2fr 10fr;
   grid-template-areas: 
   "sidebar header"
   "sidebar main-content";
@@ -23,7 +23,8 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  padding: 10px;
+  padding: 20px;
+  height: 15vh;
 }
 
 .header-top,
@@ -99,8 +100,9 @@ button {
   grid-area: sidebar;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 10fr;
   padding: 15px;
+  background-color: rgb(214 214 214);
 }
 
 .dashboard-logo {
@@ -128,10 +130,70 @@ div img {
   vertical-align: middle;
 }
 
-
+.link-settings {
+  margin-top: 50px;
+}
 
 /*MAIN CONTENT*/
 
+/*CONTENT 1*/
+
 .main-content {
   grid-area: main-content;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "content-1 content-2";
+}
+
+.content-1 {
+  grid-area: content-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20px 1fr 1fr 1fr;
+  grid-template-areas: 
+  "card-header card-header"
+  "card card"
+  "card card"
+  "card card";
+}
+
+.card-header {
+  grid-area: card-header;
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.card {
+  background-color: rgb(224, 225, 226);
+  margin: 10px;
+}
+
+/* CONTENT 2*/
+
+.content-2 {
+  grid-area: content-2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20px 1fr 20px 1fr;
+  grid-template-areas: 
+  "card-header-2"
+  "card-2"
+  "card-header-3"
+  "card-3";
+}
+
+.card-header-2,
+.card-header-3 {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.card-2,
+.card-3 {
+  background-color: rgb(224, 225, 226);
+  margin: 10px;
 }
